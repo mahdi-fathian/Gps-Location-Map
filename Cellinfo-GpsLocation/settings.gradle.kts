@@ -1,5 +1,8 @@
 pluginManagement {
     repositories {
+        maven{
+            url=uri("https://maven.emad.dev/repository/maven-public/")
+        }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -14,6 +17,9 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven{
+            url=uri("https://maven.emad.dev/repository/maven-public/")
+        }
         google()
         mavenCentral()
     }
@@ -21,4 +27,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "CellInfoApp"
 include(":app")
- 
